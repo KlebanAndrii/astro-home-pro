@@ -1,0 +1,126 @@
+.advantages {
+  padding-inline: 3.75rem;
+  @media (max-width: 1199.98px) {
+    padding-inline: 0.9375rem;
+  }
+  @media (max-width: 991.98px) {
+    padding-inline: 0;
+  }
+}
+
+.advantages__body {
+  padding-block: 4rem;
+  background-color: var(--c-bg);
+  @media (min-width: 991.98px) {
+    border-radius: 1.5rem;
+    padding-inline: 4.75rem;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 2.8125rem;
+      height: 73.295455%;
+      max-height: 40.3125rem;
+      transform: translate(0px, -50%);
+      background: url("/images/advantages/decoration.svg") left / auto 100% no-repeat;
+    }
+    &::before {
+      left: 0;
+    }
+    &::after {
+      right: 0;
+      transform: translate(0px, -50%) rotate(180deg);
+    }
+  }
+  @media (max-width: 767.98px) {
+    padding-block: 2.5rem;
+  }
+}
+
+.advantages__block-header {
+  position: relative;
+  padding-bottom: 7.5rem;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 0.0625rem;
+    width: 100%;
+    bottom: 3.75rem;
+    left: 0;
+    background: linear-gradient(90deg, rgba(20, 34, 87, 0) 0%, rgba(79, 102, 183, 1) 50%, rgba(20, 34, 87, 0) 100%);
+  }
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
+}
+
+.advantages__items {
+  display: grid;
+  column-gap: 1.25rem;
+  row-gap: 3.75rem;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  @media (max-width: 991.98px) {
+    grid-template-columns: auto;
+  }
+  @media (max-width: 419.98px) {
+    row-gap: 1.875rem;
+  }
+}
+
+.advantages__item {
+  max-width: 39.375rem;
+}
+
+.advantages__item {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.advantages__item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.item-advantages {
+  display: flex;
+  gap: 2rem;
+}
+
+.item-advantages__icon {
+  flex: 0 0 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 419.98px) {
+  .item-advantages {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.3125rem;
+  }
+  .item-advantages__icon {
+    margin-bottom: 0;
+  }
+}
+.item-advantages__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.33;
+  color: #fff;
+  &:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.item-advantages__text {
+  line-height: 1.55;
+}

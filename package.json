@@ -1,0 +1,19 @@
+{
+  "name": "astro-home-pro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.16.4",
+    "swiper": "^11.1.14"
+  },
+  "devDependencies": {
+    "sass": "^1.79.5"
+  }
+}

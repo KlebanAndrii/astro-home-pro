@@ -1,0 +1,53 @@
+---
+import "./how.css";
+---
+
+<section class="how">
+  <div class="how__container">
+    <div class="how__image">
+      <img src="/images/how/image.jpg" alt="Image" />
+    </div>
+    <div class="how__content">
+      <div class="how__block-header block-header">
+        <h2 class="block-header__title">How HomePro works?</h2>
+      </div>
+      <ul class="how__list list-how">
+        <li class="list-how__item">
+          <div class="list-how__title">Call us anytime 24/7</div>
+          <div class="list-how__text text">You can contact us directly, we will quickly put you in touch with our home care professionals who are ready anytime</div>
+        </li>
+        <li class="list-how__item">
+          <span class="list-how__title">Schedule Service</span>
+          <span class="list-how__text text">After connecting your call, our home care experts will answer your questions and provide flexible appointment times</span>
+        </li>
+        <li class="list-how__item">
+          <span class="list-how__title">Your request is complated</span>
+          <span class="list-how__text text">Once your technician arrives, he will diagnose the problem and provide an estimate. If you decide to continue, the technician will get to work</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".list-how__item");
+
+    function checkItemsVisibility() {
+      const triggerBottom = window.innerHeight * 0.9;
+
+      items.forEach((item, index) => {
+        const itemTop = item.getBoundingClientRect().top;
+
+        if (itemTop < triggerBottom) {
+          setTimeout(() => {
+            item.classList.add("visible");
+          }, index * 100); // затримка для кожного елемента
+        }
+      });
+    }
+
+    window.addEventListener("scroll", checkItemsVisibility);
+    checkItemsVisibility(); // перевірити при завантаженні
+  });
+</script>

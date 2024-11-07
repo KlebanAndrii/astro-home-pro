@@ -1,0 +1,153 @@
+/* Title */
+
+.block-header {
+  display: grid;
+  gap: 1.5rem;
+  @media (max-width: 669.98px) {
+    gap: 0.9375rem;
+  }
+}
+
+.block-header {
+  opacity: 0;
+  transform: translateY(3.125rem); /* Заголовок трохи нижче */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.block-header.visible {
+  opacity: 1;
+  transform: translateY(0); /* Повертається в нормальну позицію */
+}
+
+.block-header--center {
+  text-align: center;
+}
+
+.block-header--inline {
+  grid-template-columns: minmax(auto, 45rem) minmax(auto, 38.75rem);
+  justify-content: space-between;
+  align-items: end;
+  @media (max-width: 991.98px) {
+    grid-template-columns: auto;
+  }
+}
+
+.block-header__title {
+  color: var(--c-dark);
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.23;
+}
+
+.block-header__title--big {
+  font-size: 4rem;
+}
+
+.block-header__title--white {
+  color: #fff;
+}
+
+.block-header__text {
+  p {
+    line-height: 1.55;
+  }
+  a {
+    font-weight: 700;
+    color: var(--c-bg-lite);
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .block-header__title {
+    font-size: 2.8125rem;
+  }
+  .block-header__title--big {
+    font-size: 3.3125rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .block-header__title {
+    font-size: 2.375rem;
+  }
+  .block-header__title--big {
+    font-size: 2.625rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .block-header__title {
+    font-size: 2rem;
+  }
+  .block-header__title--big {
+    font-size: 2.375rem;
+  }
+}
+
+/*   Text  */
+
+.text {
+  line-height: 1.55;
+  p {
+    &:not(:last-child) {
+      margin-bottom: 0.9375rem;
+    }
+  }
+}
+
+/* Button */
+
+.button {
+  display: inline-flex;
+  padding: 0.5rem;
+  min-height: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3.75rem;
+  background-color: var(--c-bg-lite);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease-in-out;
+  line-height: 1.33;
+  &:hover {
+    background-color: var(--c-bg-semi);
+  }
+}
+
+.button--min {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  padding: 0.75rem 2.25rem;
+  min-height: 0;
+}
+
+.button--white {
+  color: var(--c-bg-lite);
+  background-color: #fff;
+}
+
+.button--fw {
+  width: 100%;
+}
+
+.button--icon {
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    gap: 1rem;
+    &::after {
+      content: "";
+      background: #fff url("/images/hero/phone.svg") center no-repeat;
+      flex: 0 0 3rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+    }
+  }
+}

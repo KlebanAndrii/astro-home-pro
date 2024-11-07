@@ -1,0 +1,82 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "image": "images/blog/01.jpg",
+      "title": "Understanding Smart Home Systems & Maintenance",
+      "url": "https://gogle.com",
+      "date": "19 Jan 2023",
+      "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post...</p>",
+      "tags": {
+        "Plumbing": "https://gogle.com",
+        "Architecture": "https://gogle.com",
+        "Maintenance": "https://gogle.com"
+      }
+    },
+    {
+      "id": 2,
+      "image": "images/blog/02.jpg",
+      "title": "The Ultimate Guide to Home Repairs and Renovations",
+      "url": "https://gogle.com",
+      "date": "20 Jan 2023",
+      "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post...</p>",
+      "tags": {
+        "Plumbing": "https://gogle.com",
+        "Architecture": "https://gogle.com",
+        "Maintenance": "https://gogle.com"
+      }
+    },
+    {
+      "id": 3,
+      "image": "images/blog/03.jpg",
+      "title": "Painting Techniques for a Kitchen Refresh",
+      "url": "https://gogle.com",
+      "date": "21 Jan 2023",
+      "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post...</p>",
+      "tags": {
+        "Plumbing": "https://gogle.com",
+        "Architecture": "https://gogle.com",
+        "Maintenance": "https://gogle.com"
+      }
+    },
+    {
+      "id": 4,
+      "image": "images/blog/03.jpg",
+      "title": "Painting Techniques for a Kitchen Refresh",
+      "url": "https://gogle.com",
+      "date": "21 Jan 2023",
+      "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post...</p>",
+      "tags": {
+        "Plumbing": "https://gogle.com",
+        "Architecture": "https://gogle.com",
+        "Maintenance": "https://gogle.com"
+      }
+    },
+    {
+      "id": 5,
+      "image": "images/blog/01.jpg",
+      "title": "Understanding Smart Home Systems & Maintenance",
+      "url": "https://gogle.com",
+      "date": "19 Jan 2023",
+      "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post...</p>",
+      "tags": {
+        "Plumbing": "https://gogle.com",
+        "Architecture": "https://gogle.com",
+        "Maintenance": "https://gogle.com"
+      }
+    },
+    {
+      "id": 6,
+      "image": "images/blog/02.jpg",
+      "title": "The Ultimate Guide to Home Repairs and Renovations",
+      "url": "https://gogle.com",
+      "date": "20 Jan 2023",
+      "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post...</p>",
+      "tags": {
+        "Plumbing": "https://gogle.com",
+        "Architecture": "https://gogle.com",
+        "Maintenance": "https://gogle.com"
+      }
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+.blog {
+  padding-block: 5.25rem;
+  @media (max-width: 991.98px) {
+    padding-block: 2.5rem;
+  }
+}
+
+.blog__container {
+  display: grid;
+}
+
+.blog__block-header {
+  max-width: 43.375rem;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.blog__items {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  &:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+  @media (max-width: 878.98px) {
+    grid-template-columns: auto;
+  }
+  @media (max-width: 419.98px) {
+    &:not(:last-child) {
+      margin-bottom: 2.25rem;
+    }
+  }
+}
+
+.blog__view-more {
+  justify-self: center;
+  color: var(--c-bg-lite);
+  font-size: 1.5rem;
+  line-height: 1.33;
+  font-weight: 700;
+  padding-right: 1.5rem;
+  background: url("/images/blog/right.svg") right no-repeat;
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 419.98px) {
+    font-size: 1.125rem;
+  }
+}
+
+.item-blog {
+  display: grid;
+}
+
+.item-blog__image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  img {
+    transition: all 0.5s ease;
+  }
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  @media (max-width: 878.98px) {
+    text-align: center;
+  }
+}
+
+.item-blog__date {
+  line-height: 1.55;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.item-blog__title {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.item-blog__link-title {
+  color: var(--c-dark);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 767.98px) {
+    font-size: 1.5rem;
+  }
+}
+
+.item-blog__text {
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.item-blog__tags {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.75rem;
+  row-gap: 0.1875rem;
+  @media (max-width: 878.98px) {
+    justify-content: center;
+  }
+  @media (max-width: 419.98px) {
+    column-gap: 0.375rem;
+  }
+}
+
+.item-blog__tag {
+  background-color: #f3f5f9;
+  padding: 0.5rem 1rem;
+  color: #545971;
+  font-size: 0.875rem;
+  line-height: 1.42;
+  font-weight: 600;
+  border-radius: 1.875rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: var(--c-bg-lite);
+    color: #fff;
+  }
+  @media (max-width: 419.98px) {
+    padding: 0.25rem 0.375rem;
+    border-radius: 0.625rem;
+  }
+}

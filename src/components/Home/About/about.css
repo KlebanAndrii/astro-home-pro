@@ -1,0 +1,113 @@
+.about {
+  padding-top: 10.5rem;
+  padding-bottom: 4rem;
+  @media (max-width: 1199.98px) {
+    padding-top: 6.25rem;
+  }
+  @media (max-width: 991.98px) {
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.about__container {
+  display: grid;
+  row-gap: 1.875rem;
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 991.98px) {
+    grid-template-columns: auto;
+  }
+}
+
+.about__body {
+  padding-top: 6.25rem;
+  @media (max-width: 1199.98px) {
+    padding-top: 3.125rem;
+  }
+  @media (max-width: 767.98px) {
+    padding-top: 2.5rem;
+  }
+  @media (min-width: 991.98px) {
+    max-width: 36.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.about__block-header {
+  &:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+  @media (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+.about__items {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  &:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+  @media (max-width: 1199.98px) {
+    gap: 1.625rem;
+  }
+  @media (max-width: 991.98px) {
+    gap: 1.125rem;
+  }
+  @media (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+  @media (max-width: 540px) {
+    grid-template-columns: auto;
+  }
+}
+
+.about__item {
+  background: url("/images/about/check.svg") 0 8px no-repeat;
+  padding-left: 1.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--c-bg-semi);
+  line-height: 1.4;
+}
+
+.about__item {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.about__item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about__info {
+  background-color: var(--c-bg-lite);
+  border-radius: 1.5rem;
+  padding: 0.75rem 2rem;
+  color: #fff;
+  line-height: 1.55;
+  a {
+    white-space: nowrap;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  @media (min-width: 991.98px) {
+    max-width: 28.125rem;
+  }
+}
+
+.about__image {
+  text-align: center;
+  margin: 0 auto;
+  img {
+    max-width: 100%;
+  }
+}

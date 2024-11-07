@@ -1,0 +1,124 @@
+.talk {
+  background-color: var(--c-bg);
+  position: relative;
+}
+
+.talk__container {
+  @media (min-width: 991.98px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+  }
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
+}
+
+.talk__content {
+  position: relative;
+  z-index: 2;
+  padding-top: 10.3125rem;
+  padding-bottom: 6.5625rem;
+  &::before {
+    content: "";
+    background: url("/images/talk/decor.svg") 0 0 / 83% no-repeat;
+    width: 100%;
+    aspect-ratio: 581 / 44;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @media (max-width: 991.98px) {
+      background-position: center;
+      aspect-ratio: 581 / 26;
+    }
+  }
+  @media (max-width: 1399.98px) {
+    padding-top: 7.5rem;
+    padding-bottom: 5rem;
+  }
+  @media (max-width: 767.98px) {
+    padding-top: 6.25rem;
+    padding-bottom: 4.375rem;
+  }
+  @media (max-width: 419.98px) {
+    padding-top: 3.75rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.talk__block-header {
+  text-align: start;
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
+}
+
+.talk__done {
+  justify-content: start;
+  &:not(:last-child) {
+    margin-bottom: 2.25rem;
+  }
+  @media (max-width: 1199.98px) {
+    column-gap: 0.625rem;
+    .done__item {
+      font-size: 1.125rem;
+      background-size: 1.5625rem;
+      padding-left: 1.5625rem;
+    }
+  }
+  @media (max-width: 991.98px) {
+    justify-content: center;
+  }
+  @media (max-width: 430.98px) {
+    .done__item {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 395.98px) {
+    .done__item {
+      font-size: 0.875rem;
+      background-size: 1rem;
+      padding-left: 1rem;
+    }
+  }
+}
+
+@media (max-width: 395.98px) {
+  .done {
+    column-gap: 0.375rem;
+  }
+}
+
+.talk__image {
+  img {
+    max-width: 100%;
+  }
+  @media (min-width: 991.98px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    img {
+      transform-origin: bottom right;
+      transform: scale(1);
+
+      @media (max-width: 1730px) {
+        transform: scale(0.9);
+      }
+
+      @media (max-width: 1540px) {
+        transform: scale(0.8);
+      }
+
+      @media (max-width: 1320px) {
+        transform: scale(0.7);
+      }
+
+      @media (max-width: 1140px) {
+        transform: scale(0.6);
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+---
+import Footer from "../components/Base/Footer/Footer.astro";
+import Header from "../components/Base/Header/Header.astro";
+
+const { title, bodyClass } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class={bodyClass}>
+    <div class="wrapper">
+      <Header />
+      <slot />
+      <Footer />
+    </div>
+  </body>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sectionTitles = document.querySelectorAll(".block-header");
+
+    // Функція, що перевіряє, чи елемент у видимій зоні
+    function checkVisibility() {
+      sectionTitles.forEach((title) => {
+        const titlePosition = title.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        // Якщо верхня частина заголовка ближче до нижньої частини вікна, він з'являється
+        if (titlePosition < windowHeight - 100) {
+          title.classList.add("visible");
+        }
+      });
+    }
+
+    // Викликаємо функцію під час скролу
+    window.addEventListener("scroll", checkVisibility);
+
+    // Перевірка видимості при завантаженні сторінки (щоб врахувати, якщо користувач уже прокрутив сторінку)
+    checkVisibility();
+  });
+</script>

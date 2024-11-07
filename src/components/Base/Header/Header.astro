@@ -1,0 +1,44 @@
+---
+import "./header.css";
+---
+
+<header class="header">
+  <div class="header__container">
+    <div class="header__logo">
+      <img src="/images/logo.svg" alt="Logo" width="148" height="32" />
+    </div>
+    <div class="header__menu menu">
+      <button class="menu__icon icon-menu" type="button">
+        <span></span>
+      </button>
+      <nav class="menu__body">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">About Us</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Services</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Our Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="header__actions">24 Hour Services</div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  const iconMenu = document.querySelector(".icon-menu");
+  const menu = document.querySelector(".menu");
+
+  if (iconMenu && menu) {
+    iconMenu.addEventListener("click", () => {
+      menu.classList.toggle("menu-open");
+    });
+  }
+</script>
