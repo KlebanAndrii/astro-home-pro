@@ -23,7 +23,7 @@ import "./blog.css";
 
   async function loadBlogItems() {
     try {
-      const response = await fetch("src/components/files/blog.json");
+      const response = await fetch("files/blog.json");
       if (!response.ok) throw new Error("Error loading blog data!");
       data = (await response.json()).items;
       renderBlogItems();
