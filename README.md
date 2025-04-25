@@ -1,4 +1,4 @@
-👉   <a href="[https://tangerine-nasturtium-0484d7.netlify.app/](https://home-pro-astro.netlify.app/)">astro-home-pro</a>
+👉 Click here -  [astro-home-pro](https://home-pro-astro.netlify.app/)
 
 
 # Astro Starter Kit: Basics
