@@ -1,5 +1,7 @@
 👉 Click here -  [astro-home-pro](https://home-pro-astro.netlify.app/)
 
+## This website is built using Astro and Vite for fast performance and modular component-based structure. It features smooth scroll-triggered animations: elements in the .about__item section fade in with a staggered delay as they enter the viewport. The layout is responsive, with dynamic toggling of <details> sections in the footer depending on screen size—closed on mobile and open on desktop. The newsletter subscription form includes real-time email validation with custom error tooltips and dismisses errors when clicking outside the form.
+
 
 
 ![HomeRepairServicesUaeGIF](https://github.com/user-attachments/assets/37c272f1-4a89-4ce1-901b-5bc07c83416c)
